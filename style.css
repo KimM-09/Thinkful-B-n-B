@@ -47,10 +47,16 @@ main img {
   width: 100%;
 }
 
+/* .form-item {
+  display: flex;
+  justify-content: space-between;
+} */
+
 .item {
   flex: 1;
   margin: 10px;
 }
+
 
 .item-double {
   flex: 2;
@@ -92,6 +98,7 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  align-items: center;
 }
 
 form label {
@@ -107,10 +114,13 @@ form input {
 form button {
   background-color: #ff385c;
   border: none;
+  border-radius: 20px;
   color: #fff;
   font-size: 24px;
   padding: 15px;
-  width: 100%;
+  width: 180px;
+  cursor: pointer;
+  flex: 1;
 }
 
 /* -------  Footer ------- */
@@ -126,7 +136,7 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-@media all and (min-width: 768px) {
+@media all and (min-width: 990px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -135,5 +145,14 @@ footer p {
   .group {
     display: flex;
     flex-direction: row;
+  }
+
+  form label {
+    font-weight: bold;
+    padding-right: 130px;
+  }
+  
+  form button {
+    border-radius: 0;
   }
 }
